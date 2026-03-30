@@ -349,6 +349,17 @@ export default function ProductOverviewPage() {
           </div>
         </div>
       </section>
+
+      <section className={styles.card}>
+        <h2 className={styles.h2}>For partnership inquiries</h2>
+        <p className={styles.keyText}>
+          We would be glad to discuss partnerships, licensing, or pilot collaboration.
+        </p>
+        <p className={styles.keyText}>
+          <b>Email:</b>{" "}
+          <a href="mailto:888korolta888@gmail.com">888korolta888@gmail.com</a>
+        </p>
+      </section>
     </main>
   );
 }
