@@ -108,44 +108,50 @@
 .cloudTrail {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  align-items: center;
+  gap: 16px;
   margin-top: 10px;
 }
 
 .cloud {
-  max-width: 980px;
-  padding: 14px 16px;
+  width: min(100%, 980px);
+  min-height: 56px;
+  padding: 16px 24px;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 16px 34px rgba(91, 59, 24, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 28px rgba(91, 59, 24, 0.1);
+  text-align: center;
 }
 
 .cloud p {
   margin: 0;
   font-size: 15px;
-  line-height: 1.65;
-  color: rgba(35, 24, 12, 0.86);
+  line-height: 1.72;
+  color: rgba(44, 30, 14, 0.9);
 }
 
 .cloud1 {
-  align-self: flex-start;
-  background: rgba(255, 247, 234, 0.82);
+  align-self: center;
+  background: rgba(234, 245, 246, 0.94);
+  border: 1px solid rgba(203, 226, 228, 0.9);
 }
 
 .cloud2 {
-  align-self: flex-end;
-  background: rgba(242, 250, 246, 0.82);
+  align-self: center;
+  background: rgba(241, 236, 251, 0.94);
+  border: 1px solid rgba(220, 211, 244, 0.9);
 }
 
 .cloud3 {
-  align-self: flex-start;
-  background: rgba(246, 242, 255, 0.78);
+  align-self: center;
+  background: rgba(234, 245, 246, 0.94);
+  border: 1px solid rgba(203, 226, 228, 0.9);
 }
 
 .cloud4 {
-  align-self: flex-end;
-  background: rgba(255, 244, 224, 0.82);
+  align-self: center;
+  background: rgba(241, 236, 251, 0.94);
+  border: 1px solid rgba(220, 211, 244, 0.9);
 }
 
 .keyIntro {
@@ -196,8 +202,9 @@
   display: block;
   margin-top: 4px;
   font-size: 14px;
-  line-height: 1.6;
-  color: rgba(35, 24, 12, 0.78);
+  line-height: 1.65;
+  color: rgba(49, 33, 15, 0.9);
+  font-weight: 500;
 }
 
 .flow {
@@ -229,8 +236,8 @@
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 10px 24px rgba(91, 59, 24, 0.12);
 }
 
@@ -254,7 +261,7 @@
 }
 
 .flow details[open] > .stepHeader {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.88);
 }
 
 .accordionBody {
@@ -275,8 +282,8 @@
 .step {
   padding: 14px 14px;
   border-radius: 24px;
-  background: rgba(255, 247, 234, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 247, 234, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.62);
 }
 
 .badge {
@@ -295,8 +302,8 @@
 
 .shot {
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px dashed rgba(91, 59, 24, 0.25);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px dashed rgba(91, 59, 24, 0.3);
   box-shadow: 0 16px 34px rgba(91, 59, 24, 0.1);
   overflow: hidden;
 }
@@ -308,7 +315,7 @@
 .carouselViewport {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .carouselBtn {
@@ -326,7 +333,7 @@
   font-size: 28px;
   line-height: 1;
   color: #5b3b18;
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 10px 24px rgba(91, 59, 24, 0.18);
 }
 
@@ -339,7 +346,7 @@
 }
 
 .carouselBtn:hover {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.96);
 }
 
 .carouselBtn:focus-visible {
@@ -352,7 +359,7 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 12px 14px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .carouselDot {
@@ -361,11 +368,11 @@
   border: 0;
   border-radius: 999px;
   cursor: pointer;
-  background: rgba(91, 59, 24, 0.22);
+  background: rgba(91, 59, 24, 0.24);
 }
 
 .carouselDotActive {
-  background: rgba(91, 59, 24, 0.72);
+  background: rgba(91, 59, 24, 0.76);
 }
 
 .carouselDot:focus-visible {
@@ -379,22 +386,24 @@
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  color: rgba(91, 59, 24, 0.55);
+  color: rgba(91, 59, 24, 0.58);
 }
 
 .stepText {
   margin: 10px 0 0;
-  font-size: 14px;
-  line-height: 1.6;
-  color: rgba(35, 24, 12, 0.78);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(45, 30, 14, 0.9);
+  font-weight: 500;
 }
 
 .bullets {
-  margin: 10px 0 0 18px;
+  margin: 12px 0 0 20px;
   padding: 0;
-  color: rgba(35, 24, 12, 0.78);
-  font-size: 14px;
-  line-height: 1.6;
+  color: rgba(45, 30, 14, 0.9);
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
 }
 
 .arrow {
@@ -439,5 +448,10 @@
 
   .carouselBtnRight {
     right: 8px;
+  }
+
+  .cloud {
+    width: 100%;
+    padding: 14px 16px;
   }
 }
