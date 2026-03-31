@@ -355,10 +355,10 @@ export default function ProductOverviewPage() {
         <p className={styles.keyText}>
           We would be glad to discuss partnerships, licensing, or pilot collaboration.
         </p>
-        <p className={styles.keyText}>
-          <b>Email:</b>{" "}
-          <a href="mailto:888korolta888@gmail.com">888korolta888@gmail.com</a>
-        </p>
+<p className={styles.keyText}>
+  <b>Email:</b>{" "}
+  <a href="mailto:ogurskaa42@gmail.com">ogurskaa42@gmail.com</a>
+</p>
       </section>
     </main>
   );
